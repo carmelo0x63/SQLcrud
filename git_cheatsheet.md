@@ -31,7 +31,6 @@ git push [-u origin <branch_name>]
 git clone git@github.com:<userid>/<repo_name>.git
 ```
 
-
 #### Branching
 ```
 git checkout -b <new_branch_name>
@@ -42,7 +41,6 @@ git checkout <existing_branch_name>
 ```
 git pull [origin <branch_name]
 ```
-
 
 #### Delete Branch
 ```
