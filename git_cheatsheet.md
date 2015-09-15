@@ -4,6 +4,7 @@
 ###### Initial config
 * `git config --global user.name "<Name> <Surname>"`
 * `git config --global user.email "<userid>@example.com"`
+* `git config --global color.ui true`
 
 ###### Show configuration
 * `git config -l`
@@ -17,7 +18,7 @@ git add <file> or git add .
 git commit -m '<put message here>'
   CLI: git remote add origin git@github.com:<userid>/<repo_name>.git
   HTTPS: git remote add origin https://github.com/<userid>/<repo_name>.git
-git push -u origin <branch_name>
+git push -u origin master
 ```
 
 #### Existing Git Repo
@@ -39,11 +40,18 @@ git checkout <existing_branch_name>
 
 #### Update local repository (e.g. after a merge)
 ```
-git pull [origin <branch_name]
+git pull [origin <branch_name>]
 ```
 
 #### Delete Branch
 ```
 git branch -D <local_branch_name>
 git push origin --delete <remote_branch_name>
+```
+
+#### Compare
+```
+git diff [--stat] origin/master master
+or
+git diff origin
 ```
