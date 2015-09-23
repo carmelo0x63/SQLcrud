@@ -5,6 +5,7 @@
 * `git config --global user.name "<Name> <Surname>"`
 * `git config --global user.email "<userid>@example.com"`
 * `git config --global color.ui true`
+* `git config --global push.default simple`
 
 ###### Show configuration
 * `git config -l`
@@ -18,7 +19,7 @@ git add <file> or git add .
 git commit -m '<put message here>'
   CLI: git remote add origin git@github.com:<userid>/<repo_name>.git
   HTTPS: git remote add origin https://github.com/<userid>/<repo_name>.git
-git push -u origin master
+git push -u origin <branch_name>
 ```
 
 #### Existing Git Repo
