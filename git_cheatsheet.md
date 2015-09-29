@@ -32,6 +32,7 @@ git push [-u origin <branch_name>]
 ```
 git clone git@github.com:<userid>/<repo_name>.git
 ```
+<p><b>NOTE:</b> must add public key to <i>GitHub > Settings > SSH keys</i></p>
 
 #### Branching
 ```
