@@ -5,7 +5,7 @@
 # author: mellowizAThotmailDOTcom
 # date (ISO 8601): 2015-08-07
 
-# Import some other modules
+# Import some modules
 from __future__ import print_function	# print() as a function not as a statement
 import argparse	# Parser for command-line options, arguments and sub-commands
 import os.path	# Common pathname manipulations
