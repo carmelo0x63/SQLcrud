@@ -1,7 +1,7 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 #
-# author: mellowiz@hotmail.com
-# date: 2015/07/23
+# author: carmelo.califano@gmail.com
+# date: 2020-05-06
 
 import sqlite3
 conn = sqlite3.connect('example.db')
@@ -14,7 +14,7 @@ c.execute('''CREATE TABLE urldb
 
 # Insert a row of data
 #c.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
-c.execute("INSERT INTO urldb VALUES (1, '150714', '150714', 'google', 'https://www.google.com/', 'user', 'passwd1', 'search engine', 'gmail drive calendar')")
+c.execute("INSERT INTO urldb VALUES (1, '20200506', '20200506', 'Google', 'https://www.google.com/', 'user1', 'passwd1', 'search engine', 'gmail drive calendar')")
 
 # Save (commit) the changes
 conn.commit()
@@ -22,3 +22,4 @@ conn.commit()
 # We can also close the connection if we are done with it.
 # Just be sure any changes have been committed or they will be lost.
 conn.close()
+
