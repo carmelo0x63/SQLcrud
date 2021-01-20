@@ -1,6 +1,7 @@
 ### SQLite CRUD application
 
 Collection of Python modules to Create, Read and Delete records in a database.
+**NOTE**: based on SQLite3, database is local in current implementation.
 
 ```
 $ ./sqlcrud.py
