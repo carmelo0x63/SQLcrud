@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-#
-# author: carmelo.califano@gmail.com
-# date: 2020-05-06
+# Initialize an SQL database using 'sqlite3' module
+# author: Carmelo C
+# email: carmelo.califano@gmail.com
+# history:
+#  2023-07-19: 1.0 initial version
 
 import sqlite3
-conn = sqlite3.connect('example.db')
+DBNAME = 'ipam.db'
+conn = sqlite3.connect(DBNAME)
 
 c = conn.cursor()
 
 # Create table
-c.execute('''CREATE TABLE urldb
-        (rowid integer primary key, first_added text, last_modified text, short_name text, url text, userid text, password text, category text, notes text)''');
+c.execute('''CREATE TABLE ipam_db
+        (rowid integer primary key, first_added text, last_modified text, host_name text, ip_address text, port integer, group text, notes text)''');
 
 # Insert a row of data
-#c.execute("INSERT INTO stocks VALUES ('2006-01-05','BUY','RHAT',100,35.14)")
-c.execute("INSERT INTO urldb VALUES (1, '20200506', '20200506', 'Google', 'https://www.google.com/', 'user1', 'passwd1', 'search engine', 'gmail drive calendar')")
+c.execute("INSERT INTO ipam_db VALUES (1, '20230719', '20230719', 'raspi1', '192.0.2.54', '513', 'RasPis', 'Raspberry Pi v. 1 model B')")
 
 # Save (commit) the changes
 conn.commit()
